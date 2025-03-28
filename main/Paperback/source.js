@@ -2926,6 +2926,7 @@ class Paperback extends types_1.Source {
         });
     }
     getMangaDetails(mangaId) {
+        console.log("Manga Info");
         return __awaiter(this, void 0, void 0, function* () {
             /*
                     In Komga a manga is represented by a `serie`
@@ -2974,6 +2975,7 @@ class Paperback extends types_1.Source {
         });
     }
     getChapters(mangaId) {
+        console.log("Chapters Info");
         return __awaiter(this, void 0, void 0, function* () {
             /*
                     In Komga a chapter is a `book`
@@ -3044,6 +3046,7 @@ class Paperback extends types_1.Source {
             if (['VERTICAL', 'WEBTOON'].includes(serieResult.metadata.readingDirection)) {
                 longStrip = true;
             }
+            console.log("Info given");
             return App.createChapterDetails({
                 id: chapterId,
                 mangaId: mangaId,
